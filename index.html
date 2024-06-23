@@ -17,88 +17,941 @@
 <body>
 	<div class="site-content">
 		<!-- Preloader Start -->
-		<div  class="loader-mask1">
-			<div id="splash-screen-page">
-				<div class="container ">
-					<div class="splash-screen-top">
-						<div>
-							<div class="splash-screen-logo">
-								<img src="assets/images/homescreen-1/logo/logo.png" alt="logo">
-							</div>
-							<h1 class="splash-screen-title">Urgence SNEAKERS</h1>
-							<p class="splash-screen-subtitle">Faites du shopping comme vous l'aimez !</p>
-						</div>
-					</div>
-				</div>	
+		<div class="loader-mask">
+			<div class="circle">
 			</div>
 		</div>
 		<!-- Preloader End -->
-		<!-- Onboarding Screen Start -->
-		<div id="carouselExampleIndicators" class="carousel slide onboarding-slider" data-bs-ride="carousel">
-			<div class="carousel-indicators custom-slider-btn">
-				<button type="button" id="first" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="custom-slider-dots active"></button>
-				<button type="button" id="second" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="custom-slider-dots" aria-current="true"></button>
-				<button type="button" id="third" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="custom-slider-dots"></button>
+		<!-- Header Start -->
+		<header id="top-navbar" class="top-navbar"> 
+			<div class="container">
+				<div class="top-navbar_full">
+					 <div class="back-btn">
+					 <button id="playStopButton" onclick="togglePlayStop()" style="background: none; border: none;">
+							<svg id="playIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+								<path fill="none" d="M0 0h24v24H0z"/>
+								<path d="M8 5v14l11-7z"/>
+							</svg>
+							<svg id="stopIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" style="display:none;">
+								<path fill="none" d="M0 0h24v24H0z"/>
+								<path d="M6 6h12v12H6z"/>
+							</svg>
+				</button>
+					 <audio id="audioPlayer">
+        <source src="assets/images/homescreen-1/audio/3.mp3" type="audio/mp3">
+       
+    </audio>
+				</div>
+						<div class="top-navbar-title">
+						<p>Urgence SNEAKERS</p>
+					</div>
+					<div class="skip_btn notification-badge-btn">
+						<a href="#">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<mask id="mask0_330_3241" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
+									<rect width="24" height="24" fill="white"/>
+								</mask>
+								<g mask="url(#mask0_330_3241)">
+									<path d="M10 5C10 4.46957 10.2107 3.96086 10.5858 3.58579C10.9609 3.21071 11.4696 3 12 3C12.5304 3 13.0391 3.21071 13.4142 3.58579C13.7893 3.96086 14 4.46957 14 5C15.1484 5.54303 16.1274 6.38833 16.8321 7.4453C17.5367 8.50227 17.9404 9.73107 18 11V14C18.0753 14.6217 18.2954 15.2171 18.6428 15.7381C18.9902 16.2592 19.4551 16.6914 20 17H4C4.54494 16.6914 5.00981 16.2592 5.35719 15.7381C5.70457 15.2171 5.92474 14.6217 6 14V11C6.05956 9.73107 6.4633 8.50227 7.16795 7.4453C7.8726 6.38833 8.85159 5.54303 10 5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+									<path d="M9 17V18C9 18.7956 9.31607 19.5587 9.87868 20.1213C10.4413 20.6839 11.2044 21 12 21C12.7956 21 13.5587 20.6839 14.1213 20.1213C14.6839 19.5587 15 18.7956 15 18V17" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								</g>
+							</svg>
+							<div class="notification-badge"></div>
+						</a>
+					</div>
+				</div>
 			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item first_slide active" id="slide1">
-					<div class="Onboarding-Screen-1 slide1">
-						<div class="overlay-onboading"></div>
-						<div class="container">
-							<div class="Onboarding-Screen-1-full">
-								<div class="skip_btn_1 skip_btn-onboading">
-									<a href="javascript:void(0)">Skip</a>
-								</div>
-								<div class="boarding-title">
-									<h1>Chaussures de Sport Ultimes : Performance et Confort au Rendez-vous !</h1>
-								</div>
-								<div class="onboarding-next-btn skip_btn_1">
-									<a href="javascript:void(0)">Next</a>
-								</div>
-							</div>
-						</div> 	
+			<div class="navbar-boder"></div>
+		</header>
+		<!-- Header End -->
+		<!--Homepage 1 Screen Start -->
+		<section id="homescreen1-deatils-page">
+			<div class="homescreen1-deatils-page-full">
+				<div class="homescreen-first-sec mt-32">
+					<div class="container">
+						<div class="homescreen-first-wrapper">
+						
+							<p class="home1-txt2">Trouvez vos meilleurs produits à portée de main</p>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item second_slide" id="slide2">
-					<div class="Onboarding-Screen-1 slide2">
-						<div class="overlay-onboading"></div>
+				<div class="homescreen-second-sec mt-32">
+					<div class="homescreen-second-wrapper">
 						<div class="container">
-							<div class="Onboarding-Screen-1-full">
-								<div class="skip_btn_2 skip_btn-onboading">
-									<a href="javascript:void(0)">Skip</a>
+							<div class="homescreen-second-wrapper-top">
+								<div class="categories-first">
+									<h2 class="home1-txt3">Catégories</h2>
+									<h3 class="d-none">Hidden</h3>
 								</div>
-								<div class="boarding-title">
-									<h1>En Avant avec Style : Découvrez Notre Collection de Chaussures de Sport.</h1>
-								</div>
-								<div class="onboarding-next-btn skip_btn_2">
-									<a href="javascript:void(0)">Next</a>
+								<div class="view-all-second">
+									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
-						</div> 	
+						</div>
+						<div class="homescreen-second-wrapper-bottom mt-16">
+							<div class="homescreen-second-wrapper-slider">
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-1.png" alt="category-img">
+									<div class="category-slide-content">
+										<h4>Running</h4>
+										<h5>1856 Articles</h5>
+									</div>
+								</div>
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-2.png" alt="category-img">
+									<div class="category-slide-content">
+										<h4>Training</h4>
+										<h5>845 Articles</h5>
+									</div>
+								</div>
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-3.png" alt="category-img"> 
+									<div class="category-slide-content">
+										<h4>Basketball</h4>
+										<h5>289 Articles</h5>
+									</div>
+								</div>
+								
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-4.png" alt="category-img"> 
+									<div class="category-slide-content">
+										<h4>Football</h4>
+										<h5>1482 Articles</h5>
+									</div>
+								</div>
+								
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-5.png" alt="category-img"> 
+									<div class="category-slide-content">
+										<h4>Outdoor</h4>
+										<h5>286 Articles</h5>
+									</div>
+								</div>
+								
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-6.png" alt="category-img"> 
+									<div class="category-slide-content">
+										<h4>Casual</h4>
+										<h5>286 Articles</h5>
+									</div>
+								</div>
+								
+								<div class="category-slide">
+									<img src="assets/images/homescreen-1/category-7.png" alt="category-img"> 
+									<div class="category-slide-content">
+										<h4>Enfants</h4>
+										<h5>286 Articles</h5>
+									</div>
+								</div>
+								
+								
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="carousel-item third_slide">
-					<div class="Onboarding-Screen-1 slide3">
-						<div class="overlay-onboading"></div>
+				
+				
+				
+				
+				
+				
+			
+				
+				
+				
+			<div class="homescreen-seventh-sec mt-32">
+    <div class="homescreen-seventh-wrapper">
+        <div id="carouselExampleIndicators" class="carousel slide carousel slide-shop-now2" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active show-now2-custom-btn" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="show-now2-custom-btn" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" class="show-now2-custom-btn" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active item-1">
+                    <div class="shop-now2-sec">
+                        <div class="container">
+                            <div class="homescreen-seventh-wrapper">
+                                <h3>jusqu'à 30 % de réduction ce mois-ci </h3>
+                                <p>Obtenez une réduction pour chaque commande de chaussures ! Valable uniquement aujourd'hui !<br><br><br><br></p>
+                                <div class="home1-shop-now-btn mt-32">
+                                    <a href="#">Achetez maintenant</a>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-2">
+                    <div class="shop-now2-sec">
+                        <div class="container">
+                            <div class="homescreen-seventh-wrapper">
+                                <h3>20 % de réduction <br>sur Nike ce saison </h3>
+                                <p>Profitez d'une remise sur chaque paire de chaussures commandée ! Offre valable pour aujourd'hui seulement !<br><br><br><br></p>
+                                <div class="home1-shop-now-btn mt-32">
+                                    <a href="#">Achetez maintenant</a>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item item-3">
+                    <div class="shop-now2-sec">
+                        <div class="container">
+                            <div class="homescreen-seventh-wrapper">
+                                <h3>Profitez d'une remise de 15 % sur notre collection</h3>
+                                <p>Ne manquez pas notre offre spéciale : bénéficiez d'une réduction sur toutes les commandes de chaussures aujourd'hui uniquement !</p>
+                                <div class="home1-shop-now-btn mt-32">
+                                    <a href="#">Achetez maintenant</a>	
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+				
+				
+				
+				
+				
+				<div class="homescreen-fourth-sec mt-32">
+			
+	
+					<div class="homescreen-fourth-wrapper">
 						<div class="container">
-							<div class="Onboarding-Screen-1-full">
-								<div class="boarding-title">
-									<h1>Boostez Votre Performance : Les Meilleures Chaussures de Sport Ici</h1>
+							<div class="homescreen-second-wrapper-top">
+								<div class="categories-first">
+									<h2 class="home1-txt3">Meilleures ventes</h2>
 								</div>
-								<div class="onboarding-next-btn">
-									<a href="homescreen-1.html">Commencez maintenant</a>
+								<div class="view-all-second">
+									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
-						</div> 	
+						</div>
+						<div class="homescreen-fourth-wrapper-bottom mt-16">
+							<div class="homescreen-fourth-wrapper-slider">
+								<div class="seller-slide">
+									<div class="seller-slide-top-content">
+										<img src="assets/images/homescreen-1/seller-1.png" alt="seller-img">
+										<div class="home-page-favourite">
+											<a href="javascript:void(0);" class="item-bookmark  ">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>	
+										<div class="seller-txt-sec">
+											<p class="sale-txt">Soldes</p>	
+										</div>
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="seller-name">Nike Dunk Low</h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$120.00</span>
+												<span class="seller-price-txt2">$130.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="seller-slide">
+									<div class="seller-slide-top-content">
+										<img src="assets/images/homescreen-1/seller-2.png" alt="seller-img">
+										<div class="home-page-favourite">
+											<a href="javascript:void(0);" class="item-bookmark">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>	
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="seller-name">Baskets Basses Adidas</h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$49.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="seller-slide">
+									<div class="seller-slide-top-content">
+										<img src="assets/images/homescreen-1/seller-3.png" alt="seller-img">
+										<div class="home-page-favourite">
+											<a href="javascript:void(0);" class="item-bookmark">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>	
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="seller-name">Puma Softride Enz Evo</h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$80.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
+				
+				
+				
+				<div class="homescreen-fifth-sec mt-32">
+					<div class="homescreen-fifth-wrapper">
+						<div class="container">
+							<div class="homescreen-second-wrapper-top">
+								<div class="categories-first">
+									<h2 class="home1-txt3">Choisir des marques</h2>
+								</div>
+								<div class="view-all-second">
+									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+								</div>
+							</div>
+						</div>
+						<div class="homescreen-fifth-wrapper-bottom mt-16">
+							<div class="homescreen-fifth-wrapper-slider">
+
+								<div class="brand-slide">
+									<div class="brands-img">
+										<img src="assets/images/homescreen-1/brand-1.png" alt="brand-img">
+									</div>
+									<div class="brands-content">
+										<p>Nike</p>
+									</div>
+								</div>
+								<div class="brand-slide">
+									<div class="brands-img">
+										<img src="assets/images/homescreen-1/brand-2.png" alt="seller-img">
+									</div>
+									<div class="brands-content">
+										<p>Adidas</p>
+									</div>
+								</div>
+								<div class="brand-slide">
+									<div class="brands-img">
+										<img src="assets/images/homescreen-1/brand-3.png" alt="brand-img">
+									</div>
+									<div class="brands-content">
+										<p>Puma</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="homescreen-sixth-sec mt-32">
+					<div class="homescreen-sixth-wrapper">
+						<div class="container">
+							<div class="homescreen-second-wrapper-top">
+								<div class="categories-first">
+									<h2 class="home1-txt3">Produits en vedette</h2>
+								</div>
+								<div class="view-all-second">
+									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+								</div>
+							</div>
+						</div>
+						<div class="homescreen-sixth-wrapper-bottom mt-16">
+							<div class="homescreen-sixth-wrapper-slider">
+								<div class="featured-slide">
+									<div class="featured-slide-top">
+										<img src="assets/images/homescreen-1/featured-1.png" alt="featured-img">
+										<div class="home-page-featured-favourite">
+											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="featured-name">Nike Air Max Dn</h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$150.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="featured-slide">
+									<div class="featured-slide-top">
+										<img src="assets/images/homescreen-1/featured-2.png" alt="featured-img">
+										<div class="home-page-featured-favourite">
+											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="featured-name">Nike Air Max 270 </h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$120.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">5.0</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="featured-slide">
+									<div class="featured-slide-top">
+										<img src="assets/images/homescreen-1/featured-3.png" alt="featured-img">
+										<div class="home-page-featured-favourite">
+											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+											</a>
+										</div>
+									</div>
+									<div class="seller-slide-bottom-content">
+										<h3 class="featured-name">Air Jordan 1 High Method of Make</h3>
+										<div class="seller-bottom-price">
+											<div class="seller-bottom-price1">
+												<span class="seller-price-txt1">$50.00</span>
+											</div>
+											<div class="seller-bottom-price1">
+												<span class="seller-star"><img src="assets/images/icons/orange-star.svg" alt="star-img"></span>
+												<span class="seller-price-txt3">4.6</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+	
+			
+				<div class="homescreen-third-sec mt-32">
+					<div class="container">
+						<div class="homescreen-third-wrapper">
+							<h3 style="color:White;"><b>20 % de réduction sur Nike ce saison</b></h3>
+							<p style="color:White;"><b>Profitez d'une remise sur chaque paire de chaussures commandée ! Offre valable pour aujourd'hui seulement !</b><br><br><br><br></p>
+							<div class="home1-shop-now-btn mt-32">
+								<a href="#">Shop Now</a>	
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			
+			
+			
+			
+			
+			
+				<div class="homescreen-eight-sec mt-32">
+					<div class="homescreen-eight-wrapper">
+						<div class="container">
+							<div class="homescreen-second-wrapper-top">
+								<div class="categories-first">
+									<h2 class="home1-txt3">Nouveautés</h2>
+								</div>
+								<div class="view-all-second">
+									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+								</div>
+							</div>
+						</div>
+						<div class="homescreen-eight-wrapper-bottom mt-16">
+							<div class="homescreen-eight-bottom-full">
+								<ul class="nav nav-pills mb-3" id="homepage1-tab" role="tablist">
+									<li class="nav-item" role="presentation">
+										<button class="nav-link active custom-home1-tab-btn" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab"  aria-selected="true">Tous</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link custom-home1-tab-btn" id="pills-clothes-tab" data-bs-toggle="pill" data-bs-target="#pills-clothes" type="button" role="tab"  aria-selected="false">Nike</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link custom-home1-tab-btn" id="pills-electronics-tab" data-bs-toggle="pill" data-bs-target="#pills-electronics" type="button" role="tab"  aria-selected="false">Adidas</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link custom-home1-tab-btn" id="pills-cosmetics-tab" data-bs-toggle="pill" data-bs-target="#pills-cosmetics" type="button" role="tab"  aria-selected="false">Puma</button>
+									</li>
+									<li class="nav-item" role="presentation">
+										<button class="nav-link custom-home1-tab-btn" id="pills-fitness-tab" data-bs-toggle="pill" data-bs-target="#pills-fitness" type="button" role="tab"  aria-selected="false">Reebok</button>
+									</li>
+								</ul>
+								<div class="tab-content" id="pills-tabContent">
+									<div class="tab-pane fade show active" id="pills-all" role="tabpanel"  tabindex="0">
+										<div class="container">
+											<div class="homepage1-tab-details">
+												<div class="homepage1-tab-details-wrapper">
+												<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-1.png" alt="watch-img">
+													</div>
+												</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Air Jordan 1 Low</p>
+															<h3 class="tab-home1-txt2">$150.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.8</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="homepage1-tab-details-wrapper">
+												
+													<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-2.png" alt="watch-img">
+													</div>
+													</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Nike Air Max Dn</p>
+															<h3 class="tab-home1-txt2">$850.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.9</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												<div class="homepage1-tab-details-wrapper">
+													<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-3.png" alt="watch-img">
+													</div>
+													</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Puma Softride Enz Evo </p>
+															<h3 class="tab-home1-txt2">$80.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.8</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+												
+												
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-clothes" role="tabpanel" tabindex="0">
+										<div class="container">
+											<div class="homepage1-tab-details">
+												<div class="homepage1-tab-details-wrapper">
+													<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-3.png" alt="watch-img">
+													</div>
+													</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Nike Air Max Dn </p>
+															<h3 class="tab-home1-txt2">$80.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.8</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-electronics" role="tabpanel" tabindex="0">
+										<div class="container">
+											<div class="homepage1-tab-details">
+												<div class="homepage1-tab-details-wrapper">
+													<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-1.png" alt="watch-img">
+													</div>
+													</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Adidas</p>
+															<h3 class="tab-home1-txt2">$150.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.8</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-cosmetics" role="tabpanel" tabindex="0">
+										<div class="container">
+											<div class="homepage1-tab-details">
+												<div class="homepage1-tab-details-wrapper">
+													<a href="#">
+													<div class="home1-tab-img">
+														<img src="assets/images/homescreen-1/arrivals-4.png" alt="watch-img">
+													</div>
+													</a>
+													<div class="home1-tab-details">
+														<div class="home1-tab-details-full">
+															<p class="tab-home1-txt1">Puma Softride Enz Evo</p>
+															<h3 class="tab-home1-txt2">$450.00</h3>
+															<div class="orange-star-tab">
+																<span>
+																	<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																		<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																			<rect width="18" height="18" fill="white"/>
+																		</mask>
+																		<g mask="url(#mask0_330_6287)">
+																			<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																		</g>
+																	</svg>
+																</span>
+																<span class="tab-home1-txt3">4.8</span>
+															</div>
+														</div>
+													</div>
+													<div class="home1-tab-favourite">
+														<div class="home-page-arrival-favourite">
+															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+															</a>
+														</div>
+														<div class="plus-bnt-home1">
+															<a href="javascript:void(0)">
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6097)">
+																		<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																		<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	</g>
+																</svg>
+															</a>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="pills-fitness" role="tabpanel" tabindex="0">
+										<div class="container">
+											<div class="homepage1-tab-details-wrapper">
+												<a href="#">
+												<div class="home1-tab-img">
+													<img src="assets/images/homescreen-1/arrivals-5.png" alt="watch-img">
+												</div>
+												</a>
+												<div class="home1-tab-details">
+													<div class="home1-tab-details-full">
+														<p class="tab-home1-txt1">Reebok Softride</p>
+														<h3 class="tab-home1-txt2">$65.00</h3>
+														<div class="orange-star-tab">
+															<span>
+																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																	<mask  style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																		<rect width="18" height="18" fill="white"/>
+																	</mask>
+																	<g mask="url(#mask0_330_6287)">
+																		<path d="M8.46199 2.58999C8.63485 2.23978 8.72128 2.06468 8.83862 2.00874C8.94071 1.96006 9.05932 1.96006 9.1614 2.00874C9.27874 2.06468 9.36517 2.23978 9.53804 2.58999L11.178 5.91246C11.2291 6.01585 11.2546 6.06754 11.2919 6.10768C11.3249 6.14322 11.3645 6.17201 11.4085 6.19247C11.4582 6.21557 11.5152 6.22391 11.6293 6.24058L15.2977 6.77678C15.684 6.83324 15.8772 6.86148 15.9666 6.95583C16.0444 7.03792 16.0809 7.15072 16.0661 7.26283C16.0491 7.39168 15.9093 7.52788 15.6296 7.80029L12.9761 10.3848C12.8934 10.4654 12.852 10.5057 12.8253 10.5536C12.8017 10.596 12.7865 10.6427 12.7807 10.6909C12.7741 10.7453 12.7838 10.8022 12.8034 10.9161L13.4295 14.5666C13.4955 14.9516 13.5285 15.1441 13.4665 15.2584C13.4125 15.3578 13.3165 15.4275 13.2053 15.4481C13.0775 15.4718 12.9046 15.3809 12.5588 15.1991L9.27928 13.4744C9.1771 13.4206 9.12601 13.3938 9.07218 13.3832C9.02452 13.3739 8.9755 13.3739 8.92784 13.3832C8.87402 13.3938 8.82293 13.4206 8.72074 13.4744L5.44119 15.1991C5.09544 15.3809 4.92256 15.4718 4.79473 15.4481C4.68351 15.4275 4.58754 15.3578 4.53355 15.2584C4.4715 15.1441 4.50452 14.9516 4.57056 14.5666L5.19666 10.9161C5.21618 10.8022 5.22594 10.7453 5.21934 10.6909C5.21349 10.6427 5.19833 10.596 5.1747 10.5536C5.14802 10.5057 5.10666 10.4654 5.02394 10.3848L2.37042 7.80029C2.09075 7.52788 1.95091 7.39168 1.93389 7.26283C1.91909 7.15072 1.95567 7.03792 2.03344 6.95583C2.12283 6.86148 2.31598 6.83324 2.70228 6.77678L6.37073 6.24058C6.48482 6.22391 6.54186 6.21557 6.59154 6.19247C6.63552 6.17201 6.67512 6.14322 6.70814 6.10768C6.74543 6.06754 6.77095 6.01585 6.82198 5.91246L8.46199 2.58999Z" fill="#FF4C3B"/>
+																	</g>
+																</svg>
+															</span>
+															<span class="tab-home1-txt3">4.8</span>
+														</div>
+													</div>
+												</div>
+												<div class="home1-tab-favourite">
+													<div class="home-page-arrival-favourite">
+														<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
+															<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
+														</a>
+													</div>
+													<div class="plus-bnt-home1">
+														<a href="javascript:void(0)">
+															<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<mask style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+																	<rect width="18" height="18" fill="white"/>
+																</mask>
+																<g mask="url(#mask0_330_6097)">
+																	<path d="M9 3.75V14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																	<path d="M3.75 9H14.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+																</g>
+															</svg>
+														</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!--Homepage 1 Screen End -->
+		<!--SideBar Setting Menu -->
+		
+			<div class="dark-overlay"></div>
+		</div>
+		<!--SideBar Setting Menu -->
+		<!--Bottom TabBar Section Start -->
+		<div class="bottom-tabbar">
+			<div class="bottom-tabbar-full">
+				<nav>
+					<a href="homescreen-1.html" class="active">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_330_3221" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+								<rect width="18" height="18" fill="white"/>
+							</mask>
+							<g mask="url(#mask0_330_3221)">
+								<path d="M6.09451 10.5C6.42755 11.7939 7.60212 12.75 9 12.75C10.3979 12.75 11.5725 11.7939 11.9055 10.5M8.26327 2.073L3.17654 6.02934C2.83652 6.29381 2.6665 6.42604 2.54402 6.59164C2.43552 6.73833 2.3547 6.90359 2.30552 7.07929C2.25 7.27764 2.25 7.49302 2.25 7.92379V13.35C2.25 14.1901 2.25 14.6101 2.41349 14.931C2.5573 15.2132 2.78677 15.4427 3.06901 15.5865C3.38988 15.75 3.80992 15.75 4.65 15.75H13.35C14.1901 15.75 14.6101 15.75 14.931 15.5865C15.2132 15.4427 15.4427 15.2132 15.5865 14.931C15.75 14.6101 15.75 14.1901 15.75 13.35V7.92379C15.75 7.49302 15.75 7.27764 15.6945 7.07929C15.6453 6.90359 15.5645 6.73833 15.456 6.59164C15.3335 6.42604 15.1635 6.29381 14.8235 6.02934L9.73673 2.073C9.47324 1.86806 9.34149 1.76559 9.19601 1.7262C9.06765 1.69145 8.93235 1.69145 8.80399 1.7262C8.65851 1.76559 8.52677 1.86806 8.26327 2.073Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						<span>
+							Accueil
+						</span>
+					</a>
+					<a href="search-screen.html">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_330_5977" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+								<rect width="18" height="18" fill="white"/>
+							</mask>
+							<g mask="url(#mask0_330_5977)">
+								<path d="M7.5 12.75C10.3995 12.75 12.75 10.3995 12.75 7.5C12.75 4.60051 10.3995 2.25 7.5 2.25C4.60051 2.25 2.25 4.60051 2.25 7.5C2.25 10.3995 4.60051 12.75 7.5 12.75Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M15.75 15.75L11.25 11.25" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						<span>
+							Recherche
+						</span>
+					</a>
+					<a href="cart-without-promocode.html">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_330_5464" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+								<rect width="18" height="18" fill="white"/>
+							</mask>
+							<g mask="url(#mask0_330_5464)">
+								<path d="M3 14C3 14.3978 3.15804 14.7794 3.43934 15.0607C3.72064 15.342 4.10218 15.5 4.5 15.5C4.89782 15.5 5.27936 15.342 5.56066 15.0607C5.84196 14.7794 6 14.3978 6 14C6 13.6022 5.84196 13.2206 5.56066 12.9393C5.27936 12.658 4.89782 12.5 4.5 12.5C4.10218 12.5 3.72064 12.658 3.43934 12.9393C3.15804 13.2206 3 13.6022 3 14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M11.25 14C11.25 14.3978 11.408 14.7794 11.6893 15.0607C11.9706 15.342 12.3522 15.5 12.75 15.5C13.1478 15.5 13.5294 15.342 13.8107 15.0607C14.092 14.7794 14.25 14.3978 14.25 14C14.25 13.6022 14.092 13.2206 13.8107 12.9393C13.5294 12.658 13.1478 12.5 12.75 12.5C12.3522 12.5 11.9706 12.658 11.6893 12.9393C11.408 13.2206 11.25 13.6022 11.25 14Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M12.75 12.5H4.5V2H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M4.5 3.5L15 4.25L14.25 9.5H4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						<span>
+							Panier (2)
+						</span>
+					</a>
+					<a href="wishlist-screen.html" >
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_330_5965" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+								<rect width="18" height="18" fill="white"/>
+							</mask>
+							<g mask="url(#mask0_330_5965)">
+								<path d="M14.3847 9.43755L8.75975 15.0086L3.13475 9.43755C2.76373 9.07652 2.47148 8.64257 2.27641 8.16303C2.08134 7.6835 1.98767 7.16877 2.0013 6.65126C2.01493 6.13374 2.13557 5.62466 2.35562 5.15606C2.57566 4.68746 2.89035 4.2695 3.27986 3.92849C3.66938 3.58748 4.12528 3.33082 4.61886 3.17467C5.11244 3.01851 5.633 2.96624 6.14777 3.02116C6.66255 3.07607 7.16037 3.23697 7.6099 3.49374C8.05944 3.7505 8.45093 4.09756 8.75975 4.51306C9.0699 4.10057 9.46185 3.75655 9.91107 3.50251C10.3603 3.24847 10.8571 3.08989 11.3704 3.0367C11.8838 2.9835 12.4026 3.03683 12.8943 3.19335C13.3861 3.34987 13.8403 3.60621 14.2284 3.94633C14.6166 4.28645 14.9303 4.70302 15.1501 5.16997C15.3698 5.63693 15.4908 6.14422 15.5055 6.66009C15.5202 7.17596 15.4282 7.6893 15.2353 8.16799C15.0425 8.64669 14.7529 9.08042 14.3847 9.44206" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						<span>
+							Favoris
+						</span>
+					</a>
+					<a href="let-you-screen.html">
+						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<mask id="mask0_330_5961" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
+								<rect width="18" height="18" fill="white"/>
+							</mask>
+							<g mask="url(#mask0_330_5961)">
+								<path d="M15 15.75C15 14.7033 15 14.18 14.8708 13.7541C14.58 12.7953 13.8297 12.045 12.8709 11.7542C12.445 11.625 11.9217 11.625 10.875 11.625H7.125C6.07833 11.625 5.55499 11.625 5.12914 11.7542C4.17034 12.045 3.42003 12.7953 3.12918 13.7541C3 14.18 3 14.7033 3 15.75M12.375 5.625C12.375 7.48896 10.864 9 9 9C7.13604 9 5.625 7.48896 5.625 5.625C5.625 3.76104 7.13604 2.25 9 2.25C10.864 2.25 12.375 3.76104 12.375 5.625Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+							</g>
+						</svg>
+						<span>
+							Compte
+						</span>
+					</a>
+				</nav>
 			</div>
 		</div>
-		<!-- Onboarding Screen End -->
+		<!--Bottom TabBar Section End -->
+		<!-- pwa install app popup Start -->
+		<div class="offcanvas offcanvas-bottom addtohome-popup theme-offcanvas" tabindex="-1" id="offcanvas" aria-modal="true" role="dialog">
+			<button type="button" class="btn-close text-reset popup-close-home" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			<div class="offcanvas-body small">
+				<img class="logo-popup" src="assets/images/homescreen-1/logo/logo.png" alt="logo">
+				<p class="title font-w600">Urgence SNEAKERS</p>
+				<p>Bienvenue dans notre magasin de chaussures de sport, où confort, performance et style se rencontrent pour vous offrir la meilleure expérience shopping.</p>
+				<a href="javascript:void(0)" class="theme-btn install-app btn-inline addhome-btn" id="installApp" hidden>Add to Home Screen</a>
+			</div>
+		</div>
+		<!-- pwa install app popup End -->
 	</div>
 	<script src="assets/js/jquery-min-3.6.0.js"></script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/js/modal.js"></script>
 	<script src="assets/js/custom.js"></script>
+	
+	 <script src="assets/js/script_audio.js"></script>
 </body>
 </html>
