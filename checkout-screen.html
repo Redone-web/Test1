@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Urgence SNEAKERS</title>
+	<title>Zoop Retails Store</title>
 	<link rel="icon" href="assets/images/favicon/icon.png">
 	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -13,6 +13,31 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media-query.css">
+	
+	
+	 <style>
+        .small-input {
+            width: 100%;
+            font-size: 0.875rem; /* Ajustez cette valeur pour modifier la taille du texte */
+            padding: 0.375rem; /* Ajustez cette valeur pour modifier la hauteur de l'input */
+        }
+
+        .btn-validate-address {
+            background-color: #FF4C3B;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            cursor: pointer;
+            display: block;
+            margin-top: 1rem;
+            width: 100%; /* Pour que le bouton prenne toute la largeur du formulaire */
+        }
+
+        .btn-validate-address:hover {
+            background-color: #e74334; /* Optionnel : couleur du bouton au survol */
+        }
+    </style>
 </head>
 <body>
 	<div class="site-content">
@@ -54,30 +79,29 @@
 					<div class="Checkout-first-sec">
 						<div class="Checkout-first-sec-full">
 							<span>Ma commande</span>
-							<span>$315.00</span>
+							<span> <div id="total-price"></div></span>
 						</div>
 						<div class="Checkout-border"></div>
 					</div>
 					<div class="Checkout-second-sec">
 						<div class="Checkout-second-full">
-							<div class="check-deatils">
-								<span class="check-txt1">Puma Softride Enz Evo</span>
-								<span class="check-txt2">1 x $150.00</span>
-							</div>
-							<div class="check-deatils">
-								<span class="check-txt1">Baskets Basses Adidas</span>
-								<span class="check-txt2">1 x $150.00</span>
-							</div>
+						
+						
+							<div id="cart-details-container"></div>
+							
+							<br>
+							
 							<div class="check-deatils">
 								<span class="check-txt1">Réduction</span>
-								<span class="check-txt2 col-red">$00.00</span>
+								<span class="check-txt2 col-red"></span>
 							</div>
 							<div class="check-deatils">
 								<span class="check-txt1">Livraison</span>
-								<span class="check-txt2 col-green">$15.00</span>
+								<span class="check-txt2 col-green"></span>
 							</div>
 						</div>
 					</div>
+					
 					<div class="Checkout-third-sec">
 						<div class="Checkout-third-sec-full">
 							<a href="#checkout-modal" data-bs-toggle="modal" >
@@ -95,7 +119,8 @@
 									</div>
 									<div class="check-deatils-sec">
 										<p class="shipp-txt1">Détails de livraison</p>
-										<p class="shipp-txt2">12000 Temara  ,Rue Molay Rchid , Maroc</p>
+										<p class="shipp-txt22"  id= "id_adresse"></p>
+											
 									</div>
 									<div class="check-back-sec">
 										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +133,7 @@
 										</svg>
 									</div>
 								</div>
-								<div class="shipping-boder"></div>
+								<div class="shipping-boder">  </div>
 							</a>
 							<a href="#checkout-modal-payment" data-bs-toggle="modal">
 								<div class="shopping-deatils mt-16">
@@ -157,28 +182,32 @@
 		</section>
 		<!-- Checkout Section End -->
 		<!-- Checkout Shipping Modal Section Start -->
-		<div class="modal fade" id="checkout-modal" tabindex="-1" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered">
-				<div class="modal-content checkout-modal-content">
-					<div class="modal-header">
-						<p class="checkout-modal-txt1">Choisir les détails de livraison</p>
-					</div>
-					<div class="modal-body">
-						<form>
-							<div class="form-check border-bottom px-0 custom-radio">
-								
-								<label class="form-check-label checkout-modal-lbl" for="shipping1">
-									Adresse
-									<span><input type="text"></span>
-								</label>
-							</div>
-							
-							
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+ <!-- Modal -->
+    <div class="modal fade" id="checkout-modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content checkout-modal-content">
+                <div class="modal-header">
+                    <p class="checkout-modal-txt1">Choisir les détails de livraison</p>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-check border-bottom px-0 custom-radio">
+                            <label class="form-check-label checkout-modal-lbl" for="shipping1">
+                                Adresse
+                                <span>
+                                    <div class="enter-code-promocode">
+                                        <input type="text" id="address-input" placeholder="Entrez Votre Adresse" class="small-input">
+                                    </div>
+                                </span>
+                            </label>
+                        </div>
+                        <button type="button" id="btn-validate-address" class="btn-validate-address">Valider l'adresse</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+	
 		<!-- Checkout Shipping Modal Section End -->
 		<div class="modal fade" id="checkout-modal-payment" tabindex="-1" aria-hidden="true">
 		<!-- Checkout Payment Modal Section Start -->
@@ -215,5 +244,116 @@
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
 	<script src="assets/js/custom.js"></script>
+	
+	
+	
+	
+	  <script>
+	  // recuper valeur de livraision et promo et total 
+        document.addEventListener("DOMContentLoaded", function() {
+            // Récupérer les valeurs depuis localStorage
+            var price = localStorage.getItem('price');
+            var colGreen = localStorage.getItem('colGreen');
+            var colRed = localStorage.getItem('colRed');
+
+            // Afficher les valeurs récupérées
+            if (price) {
+                document.getElementById('total-price').textContent = 'Total: ' + price ;
+            } else {
+                document.getElementById('total-price').textContent = 'Total: N/A';
+            }
+
+            if (colGreen) {
+                document.querySelector('.check-txt2.col-red').textContent = colGreen;
+            } else {
+                document.querySelector('.check-txt2.col-red').textContent = 'Livraison: N/A';
+            }
+
+            if (colRed) {
+                document.querySelector('.check-txt2.col-green').textContent = colRed;
+            } else {
+                document.querySelector('.check-txt2.col-green').textContent = 'Réduction: N/A';
+            }
+
+            // Optionnel : Effacer les valeurs de localStorage une fois utilisées
+            // localStorage.removeItem('price');
+            // localStorage.removeItem('colGreen');
+            // localStorage.removeItem('colRed');
+        });
+    </script>
+	
+	
+	
+	
+	
+	<script>
+	
+	// pour affchier les produit qui sont dans le panier cookis
+        let discount = 0;
+
+        function getCookie(name) {
+            let cookieArr = document.cookie.split(";");
+
+            for (let i = 0; i < cookieArr.length; i++) {
+                let cookiePair = cookieArr[i].split("=");
+
+                if (name == cookiePair[0].trim()) {
+                    return JSON.parse(decodeURIComponent(cookiePair[1]));
+                }
+            }
+
+            return null;
+        }
+
+        function setCookie(name, value, days) {
+            let expires = "";
+            if (days) {
+                let date = new Date();
+                date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                expires = "; expires=" + date.toUTCString();
+            }
+            document.cookie = name + "=" + (encodeURIComponent(JSON.stringify(value)) || "") + expires + "; path=/";
+        }
+
+        function displayCartDetails() {
+            const cartItems = getCookie('cart') || [];
+            const cartDetailsContainer = document.getElementById('cart-details-container');
+
+            if (cartItems.length === 0) {
+                cartDetailsContainer.innerHTML = '<div class="check-deatils"><span>Votre panier est vide.</span></div>';
+            } else {
+                cartDetailsContainer.innerHTML = ''; // Clear previous content
+
+                cartItems.forEach(product => {
+                    const productDetails = document.createElement('div');
+                    productDetails.classList.add('check-deatils');
+
+                    productDetails.innerHTML = `
+                        <span class="check-txt1">${product.name}<\/span>
+                        <span class="check-txt2">${product.quantity} x ${product.price.toFixed(2)} €<\/span>
+                    `;
+
+                    cartDetailsContainer.appendChild(productDetails);
+                });
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', displayCartDetails);
+    </script>
+	
+	
+	
+ <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('btn-validate-address').addEventListener('click', function() {
+                var address = document.getElementById('address-input').value;
+                document.getElementById('id_adresse').innerText = address;
+                var modal = document.getElementById('checkout-modal');
+                var modalInstance = bootstrap.Modal.getInstance(modal);
+                modalInstance.hide();
+            });
+        });
+    </script>
+
 </body>
 </html>
