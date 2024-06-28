@@ -1,0 +1,107 @@
+
+.cart-icon {
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    border-radius: 50%;
+    background: #3ea54f;
+    color: white;
+    font-size: 12px;
+}
+
+#favouritesCount.badge {
+    background: #FF9F33; /* Couleur de fond du badge favoris */
+}
+
+
+/* image de meilleurs vente */ 
+.image-container {
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    width: 240px; /* Largeur et hauteur ajustées à l'image */
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.image-container img {
+    display: block;
+    width: 100%; /* Ajuste la largeur de l'image au conteneur */
+    height: auto; /* Garde le ratio hauteur/largeur de l'image */
+    transform: rotate(-45deg); /* Compensation de la rotation pour l'image */
+    margin-left: -20px; /* Déplace l'image de 40px vers la droite */
+}
+
+
+
+/* image de produit vente */ 
+.image-container-2 {
+    display: flex;
+    justify-content: center; /* Centre l'image horizontalement */
+    align-items: center; /* Centre l'image verticalement */
+    width: 240px; /* Largeur et hauteur ajustées à l'image */
+    height: 200px;
+    overflow: hidden;
+    border: 1px solid #ff4c3b;
+    border-radius: 8px;
+    background: linear-gradient(135deg, rgba(255, 76, 59, 0.2), rgba(255, 175, 59, 0.4)); /* Dégradé avec transparence */
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19); /* Effet d'ombre */
+}
+
+
+
+.image-container-2 img {
+    display: block;
+    width: 100%; /* Ajuste la largeur de l'image au conteneur */
+    height: auto; /* Garde le ratio hauteur/largeur de l'image */
+
+   
+   
+}
+
+
+
+/* animation mage meilleurs vente */
+/* Styles pour l'overlay */
+ .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Ajout de transition pour l'effet de disparition */
+    opacity: 1;
+    transform: translateX(0); /* Position de départ pour l'effet vers la gauche */
+  }
+  .overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  
+  
+  /* IMAGE BREND MARQUE */
+  .high-quality-img {
+    width: 90px; /* Ajustez la largeur selon vos besoins */
+    height: 45px; /* Ajustez la hauteur selon vos besoins */
+    object-fit: contain; /* Cela permet de conserver le ratio de l'image */
+}
+
+
+
