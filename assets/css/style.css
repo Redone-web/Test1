@@ -1420,7 +1420,6 @@ a.addhome-btn {
 }
 .seller-slide-top-content {
     border-radius: 8px;
-    background: #F0F0F0;
     width: 200px;
     height: 240px;
     display: flex;
@@ -1428,10 +1427,17 @@ a.addhome-btn {
     justify-content: center;
     position: relative;
 }
-.seller-slide-top-content img {
-    mix-blend-mode: multiply;
-    padding: 3px 0;
+
+.seller-slide-top-content-1 {
+    border-radius: 8px;
+    width: 180px;
+    height: 240px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
+
 .seller-name {
     color: #000;
     font-family: Space Grotesk;
@@ -1487,7 +1493,7 @@ a.addhome-btn {
 }
 .brands-img {
     border-radius: 4px;
-    background:#F0F0F0;
+    background:#e8f6f7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1625,8 +1631,13 @@ a.addhome-btn {
 .custom-home1-tab-btn.active:hover{
     color: white !important;
 }
-.home1-tab-img img{
+.home1-tab-img img {
     mix-blend-mode: multiply;
+    width: 140px; /* Largeur spécifique de l'image */
+    height: 150px; /* Hauteur spécifique de l'image */
+
+
+ 
 }
 .homepage1-tab-details-wrapper {
     display: flex;
@@ -1641,15 +1652,16 @@ a.addhome-btn {
 }
 
 
-.home1-tab-img{
-    width: 128px;
+.home1-tab-img {
+    width: 150px;
     margin-right: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
     background: #F0F0F0;
-    padding: 9px 9px;
+    padding: 2px 2px;
+    overflow: hidden; /* Coupe les bords des images débordantes */
 }
 .home1-tab-favourite{
     margin-left: 16px;
@@ -1696,7 +1708,7 @@ a.addhome-btn {
 .home-page-arrival-favourite {
     width: 28px;
     height: 28px;
-    background: #f0f0f0;
+   
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -2089,16 +2101,19 @@ input.form-check-input.custom-input:active{
 /************************ 26.Cart Without Promocode Screen CSS ***************************/
 .cart-without-img-sec {
     border-radius: 8px;
-    background: #F0F0F0;
+   
     width: 140px;
     height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
+	border: 2px solid  #ff4c3b;
 }
 .cart-without-img-sec img {
-    mix-blend-mode: darken;
+   transform: rotate(-20deg); /* Compensation de la rotation pour l'image */
     padding: 2px;
+	margin-left: -18px; /* Déplace l'image de 40px vers la droite */
+	
 }   
 .card-without-price-sec {
     display: flex;
@@ -3320,7 +3335,7 @@ p.print-txt {
     text-align: center;
 }
 .single-clothes-slide-img img {
-    mix-blend-mode: darken;
+   
     padding: 6px;
     max-width: 100%;
 }
@@ -3450,16 +3465,16 @@ p.print-txt {
     position: relative;
 }
 .color1{
-    background: #65D6BA;
+    background: #f0f0f0;
 }
 .color2{
-    background: #D66565;
+    background: #000000;
 }
 .color3{
-    background: #6570D6;
+    background:  #808080;
 }
 .color4{
-    background: #ABD665;
+    background: #1664ff;
 }
 .color5{
  background: black;
@@ -3479,6 +3494,7 @@ p.print-txt {
     background-position: center;
     background-repeat: no-repeat;
     opacity: 0;
+
 }
 .color-wrap input[type="radio"]:checked:after{
     opacity: 1;
