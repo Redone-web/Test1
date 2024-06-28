@@ -13,6 +13,10 @@
 	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/style.css">
 	<link rel="stylesheet" href="assets/css/media-query.css">
+	
+	<link rel="stylesheet" href="count_panier_icon.css">
+	
+	
 </head>
 <body>
 	<div class="site-content">
@@ -84,70 +88,66 @@
 									<h3 class="d-none">Hidden</h3>
 								</div>
 								<div class="view-all-second">
-									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+									<a href="search-screen.html"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
 						</div>
+				
 						<div class="homescreen-second-wrapper-bottom mt-16">
 							<div class="homescreen-second-wrapper-slider">
-								<div class="category-slide">
+								<div class="category-slide" onclick="selectCategory('Running')">
 									<img src="assets/images/homescreen-1/category-1.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Running</h4>
 										<h5>1856 Articles</h5>
 									</div>
 								</div>
-								<div class="category-slide">
+								<div class="category-slide" onclick="selectCategory('Training')">
 									<img src="assets/images/homescreen-1/category-2.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Training</h4>
 										<h5>845 Articles</h5>
 									</div>
 								</div>
-								<div class="category-slide">
-									<img src="assets/images/homescreen-1/category-3.png" alt="category-img"> 
+								<div class="category-slide" onclick="selectCategory('Basketball')">
+									<img src="assets/images/homescreen-1/category-3.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Basketball</h4>
 										<h5>289 Articles</h5>
 									</div>
 								</div>
-								
-								<div class="category-slide">
-									<img src="assets/images/homescreen-1/category-4.png" alt="category-img"> 
+								<div class="category-slide" onclick="selectCategory('Football')">
+									<img src="assets/images/homescreen-1/category-4.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Football</h4>
 										<h5>1482 Articles</h5>
 									</div>
 								</div>
-								
-								<div class="category-slide">
-									<img src="assets/images/homescreen-1/category-5.png" alt="category-img"> 
+								<div class="category-slide" onclick="selectCategory('Outdoor')">
+									<img src="assets/images/homescreen-1/category-5.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Outdoor</h4>
 										<h5>286 Articles</h5>
 									</div>
 								</div>
-								
-								<div class="category-slide">
-									<img src="assets/images/homescreen-1/category-6.png" alt="category-img"> 
+								<div class="category-slide" onclick="selectCategory('Casual')">
+									<img src="assets/images/homescreen-1/category-6.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Casual</h4>
 										<h5>286 Articles</h5>
 									</div>
 								</div>
-								
-								<div class="category-slide">
-									<img src="assets/images/homescreen-1/category-7.png" alt="category-img"> 
+								<div class="category-slide" onclick="selectCategory('Enfants')">
+									<img src="assets/images/homescreen-1/category-7.png" alt="category-img">
 									<div class="category-slide-content">
 										<h4>Enfants</h4>
 										<h5>286 Articles</h5>
 									</div>
 								</div>
-								
-								
 							</div>
 						</div>
-					</div>
+
+				</div>
 				</div>
 				
 				
@@ -227,7 +227,7 @@
 									<h2 class="home1-txt3">Meilleures ventes</h2>
 								</div>
 								<div class="view-all-second">
-									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+									<a href="best-seller-screen.html"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
 						</div>
@@ -235,12 +235,24 @@
 							<div class="homescreen-fourth-wrapper-slider">
 								<div class="seller-slide">
 									<div class="seller-slide-top-content">
-										<img src="assets/images/homescreen-1/seller-1.png" alt="seller-img">
+									<div class="image-container">
+						  <a class="image-link" href="single-shoes.html">
+							<img class="main-image" src="assets/images/homescreen-1/seller-1.png" alt="seller-img" width="200" height="240">
+						  </a>
+						</div>
+						
+							
+													
 										<div class="home-page-favourite">
+										<div class="product_favorie" data-id="1" data-name="Air Jordan 1 Low" data-price="150.00" data-image="assets/images/homescreen-1/seller-1.png" data-color="red" data-size="M">
 											<a href="javascript:void(0);" class="item-bookmark  ">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
 										</div>	
+										</div>
+							
+
+							
 										<div class="seller-txt-sec">
 											<p class="sale-txt">Soldes</p>	
 										</div>
@@ -261,11 +273,28 @@
 								</div>
 								<div class="seller-slide">
 									<div class="seller-slide-top-content">
-										<img src="assets/images/homescreen-1/seller-2.png" alt="seller-img">
+									
+
+
+						<!-- Image cliquable -->
+						<div class="image-container">
+						  <a class="image-link" href="single-shoes.html">
+							<img class="main-image" src="assets/images/homescreen-1/seller-2.png" alt="seller-img" width="200" height="240">
+						  </a>
+						</div>
+
+
+
+
+
+
 										<div class="home-page-favourite">
+										<div class="product_favorie" data-id="2" data-name="Nike Air Max Dn" data-price="200.00" data-image="assets/images/homescreen-1/seller-2.png" data-color="blue" data-size="L">
+  
 											<a href="javascript:void(0);" class="item-bookmark">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
+										</div>
 										</div>	
 									</div>
 									<div class="seller-slide-bottom-content">
@@ -283,11 +312,18 @@
 								</div>
 								<div class="seller-slide">
 									<div class="seller-slide-top-content">
-										<img src="assets/images/homescreen-1/seller-3.png" alt="seller-img">
+									<div class="image-container">
+						  <a class="image-link" href="single-shoes.html">
+							<img class="main-image" src="assets/images/homescreen-1/seller-3.png" alt="seller-img" width="200" height="240">
+						  </a>
+						</div>
 										<div class="home-page-favourite">
+											<div class="product_favorie" data-id="3" data-name="Puma Softride Enz Evo" data-price="50.00" data-image="assets/images/homescreen-1/seller-3.png" data-color="yelloew" data-size="45">
 											<a href="javascript:void(0);" class="item-bookmark">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
+											</div>
+									
 										</div>	
 									</div>
 									<div class="seller-slide-bottom-content">
@@ -315,10 +351,10 @@
 						<div class="container">
 							<div class="homescreen-second-wrapper-top">
 								<div class="categories-first">
-									<h2 class="home1-txt3">Choisir des marques</h2>
+									<h2 class="home1-txt3">Explorez nos marques</h2>
 								</div>
 								<div class="view-all-second">
-									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+									<a href="search-screen-marque.html"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
 						</div>
@@ -327,7 +363,7 @@
 
 								<div class="brand-slide">
 									<div class="brands-img">
-										<img src="assets/images/homescreen-1/brand-1.png" alt="brand-img">
+							   <img src="assets/images/homescreen-1/marque/Nike.png" alt="brand-img" class="high-quality-img">
 									</div>
 									<div class="brands-content">
 										<p>Nike</p>
@@ -335,7 +371,7 @@
 								</div>
 								<div class="brand-slide">
 									<div class="brands-img">
-										<img src="assets/images/homescreen-1/brand-2.png" alt="seller-img">
+										<img src="assets/images/homescreen-1/marque/adidas.png" alt="seller-img" class="high-quality-img">
 									</div>
 									<div class="brands-content">
 										<p>Adidas</p>
@@ -343,10 +379,19 @@
 								</div>
 								<div class="brand-slide">
 									<div class="brands-img">
-										<img src="assets/images/homescreen-1/brand-3.png" alt="brand-img">
+										<img src="assets/images/homescreen-1/marque/puma.png" alt="brand-img" class="high-quality-img">
 									</div>
 									<div class="brands-content">
 										<p>Puma</p>
+									</div>
+								</div>
+								
+								<div class="brand-slide">
+									<div class="brands-img">
+										<img src="assets/images/homescreen-1/marque/reebok.png" alt="brand-img" class="high-quality-img">
+									</div>
+									<div class="brands-content">
+										<p>Reebok</p>
 									</div>
 								</div>
 							</div>
@@ -358,10 +403,10 @@
 						<div class="container">
 							<div class="homescreen-second-wrapper-top">
 								<div class="categories-first">
-									<h2 class="home1-txt3">Produits en vedette</h2>
+									<h2 class="home1-txt3">Produits en ventes</h2>
 								</div>
 								<div class="view-all-second">
-									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+									<a href="produits_screen.html"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
 						</div>
@@ -369,11 +414,14 @@
 							<div class="homescreen-sixth-wrapper-slider">
 								<div class="featured-slide">
 									<div class="featured-slide-top">
-										<img src="assets/images/homescreen-1/featured-1.png" alt="featured-img">
+										<img src="assets/images/homescreen-1/seller-1.png" alt="featured-img" width="190" height="210" >
 										<div class="home-page-featured-favourite">
+										<div class="product_favorie" data-id="1" data-name="Air Jordan 1 Low" data-price="150.00" data-image="assets/images/homescreen-1/seller-1.png" data-color="red" data-size="M">
+													
 											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
+										</div>
 										</div>
 									</div>
 									<div class="seller-slide-bottom-content">
@@ -391,11 +439,14 @@
 								</div>
 								<div class="featured-slide">
 									<div class="featured-slide-top">
-										<img src="assets/images/homescreen-1/featured-2.png" alt="featured-img">
+										<img src="assets/images/homescreen-1/seller-2.png" alt="featured-img" width="190" height="250">
 										<div class="home-page-featured-favourite">
+											<div class="product_favorie" data-id="2" data-name="Nike Air Max Dn" data-price="200.00" data-image="assets/images/homescreen-1/seller-2.png" data-color="blue" data-size="L">
+  
 											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
+											</div>
 										</div>
 									</div>
 									<div class="seller-slide-bottom-content">
@@ -413,11 +464,13 @@
 								</div>
 								<div class="featured-slide">
 									<div class="featured-slide-top">
-										<img src="assets/images/homescreen-1/featured-3.png" alt="featured-img">
+										<img src="assets/images/homescreen-1/seller-3.png" alt="featured-img" width="190" height="210">
 										<div class="home-page-featured-favourite">
+										<div class="product_favorie" data-id="3" data-name="Puma Softride Enz Evo" data-price="50.00" data-image="assets/images/homescreen-1/seller-3.png" data-color="yelloew" data-size="45">
 											<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 												<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 											</a>
+										</div>
 										</div>
 									</div>
 									<div class="seller-slide-bottom-content">
@@ -467,7 +520,7 @@
 									<h2 class="home1-txt3">Nouveautés</h2>
 								</div>
 								<div class="view-all-second">
-									<a href="#"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
+									<a href="search-screen-marque.html"><p class="view-all-txt">Voir tout<span><img src="assets/images/icons/view-all-icon.svg" alt="right-arrow"></span></p></a>
 								</div>
 							</div>
 						</div>
@@ -497,7 +550,7 @@
 												<div class="homepage1-tab-details-wrapper">
 												<a href="#">
 													<div class="home1-tab-img">
-														<img src="assets/images/homescreen-1/arrivals-1.png" alt="watch-img">
+														<img src="assets/images/homescreen-1/seller-1.png" alt="watch-img" >
 													</div>
 												</a>
 													<div class="home1-tab-details">
@@ -519,12 +572,16 @@
 															</div>
 														</div>
 													</div>
-													<div class="home1-tab-favourite">
-														<div class="home-page-arrival-favourite">
+												<div class="home1-tab-favourite">
+												<div class="home-page-arrival-favourite">
+													<div class="product_favorie" data-id="1" data-name="Air Jordan 1 Low" data-price="150.00" data-image="assets/images/homescreen-1/seller-1.png" data-color="red" data-size="M">
+														
 															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 															</a>
 														</div>
+												</div>
+													<div class="product" data-id="1" data-name="Air Jordan 1 Low" data-price="150.00" data-image="assets/images/homescreen-1/seller-1.png" data-color="red" data-size="M">
 														<div class="plus-bnt-home1">
 															<a href="javascript:void(0)">
 																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -540,11 +597,14 @@
 														</div>
 													</div>
 												</div>
+
+
+												</div>
 												<div class="homepage1-tab-details-wrapper">
 												
 													<a href="#">
 													<div class="home1-tab-img">
-														<img src="assets/images/homescreen-1/arrivals-2.png" alt="watch-img">
+															<img src="assets/images/homescreen-1/seller-2.png" alt="watch-img" width="140" height="110">
 													</div>
 													</a>
 													<div class="home1-tab-details">
@@ -567,11 +627,18 @@
 														</div>
 													</div>
 													<div class="home1-tab-favourite">
+													
 														<div class="home-page-arrival-favourite">
+													<div class="product_favorie" data-id="2" data-name="Nike Air Max Dn" data-price="200.00" data-image="assets/images/homescreen-1/seller-2.png" data-color="blue" data-size="L">
+  
+													
 															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 															</a>
 														</div>
+													</div>
+														 <div class="product" data-id="2" data-name="Nike Air Max Dn" data-price="200.00" data-image="assets/images/homescreen-1/seller-2.png" data-color="blue" data-size="L">
+  
 														<div class="plus-bnt-home1">
 															<a href="javascript:void(0)">
 																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -585,12 +652,14 @@
 																</svg>
 															</a>
 														</div>
+												
+														</div>
 													</div>
 												</div>
 												<div class="homepage1-tab-details-wrapper">
 													<a href="#">
 													<div class="home1-tab-img">
-														<img src="assets/images/homescreen-1/arrivals-3.png" alt="watch-img">
+														<img src="assets/images/homescreen-1/seller-3.png" alt="watch-img" width="140" height="110">
 													</div>
 													</a>
 													<div class="home1-tab-details">
@@ -613,11 +682,17 @@
 														</div>
 													</div>
 													<div class="home1-tab-favourite">
-														<div class="home-page-arrival-favourite">
+													
+															<div class="home-page-arrival-favourite">
+														<div class="product_favorie" data-id="3" data-name="Puma Softride Enz Evo" data-price="50.00" data-image="assets/images/homescreen-1/seller-3.png" data-color="yelloew" data-size="45">
+													
+												
 															<a href="javascript:void(0);" class="item-bookmark" tabindex="-1">
 																<img src="assets/images/icons/unfill-heart.svg" alt="unfill-heart">
 															</a>
 														</div>
+														</div>
+														<div class="product" data-id="3" data-name="Puma Softride Enz Evo" data-price="50.00" data-image="assets/images/homescreen-1/seller-3.png" data-color="yelloew" data-size="45">
 														<div class="plus-bnt-home1">
 															<a href="javascript:void(0)">
 																<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -630,6 +705,7 @@
 																	</g>
 																</svg>
 															</a>
+														</div>
 														</div>
 													</div>
 												</div>
@@ -851,6 +927,12 @@
 				</div>
 			</div>	
 		</section>
+		
+		
+		<!--alert quand un produit est inser dans panier -->
+		<div id="alert-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+
+
 		<!--Homepage 1 Screen End -->
 		<!--SideBar Setting Menu -->
 		
@@ -888,7 +970,9 @@
 							Recherche
 						</span>
 					</a>
-					<a href="cart-without-promocode.html">
+					
+					<a href="cart-without-promocode.html" class="cart-icon">
+					
 						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<mask id="mask0_330_5464" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
 								<rect width="18" height="18" fill="white"/>
@@ -899,12 +983,13 @@
 								<path d="M12.75 12.5H4.5V2H3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								<path d="M4.5 3.5L15 4.25L14.25 9.5H4.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</g>
+							
 						</svg>
-						<span>
-							Panier (2)
-						</span>
+						<p id="cartCount"  class="badge">3</p>
+						<span>Panier (2)</span>
 					</a>
-					<a href="wishlist-screen.html" >
+				
+					<a href="wishlist-screen.html" class="cart-icon" >
 						<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
 							<mask id="mask0_330_5965" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="18" height="18">
 								<rect width="18" height="18" fill="white"/>
@@ -913,6 +998,7 @@
 								<path d="M14.3847 9.43755L8.75975 15.0086L3.13475 9.43755C2.76373 9.07652 2.47148 8.64257 2.27641 8.16303C2.08134 7.6835 1.98767 7.16877 2.0013 6.65126C2.01493 6.13374 2.13557 5.62466 2.35562 5.15606C2.57566 4.68746 2.89035 4.2695 3.27986 3.92849C3.66938 3.58748 4.12528 3.33082 4.61886 3.17467C5.11244 3.01851 5.633 2.96624 6.14777 3.02116C6.66255 3.07607 7.16037 3.23697 7.6099 3.49374C8.05944 3.7505 8.45093 4.09756 8.75975 4.51306C9.0699 4.10057 9.46185 3.75655 9.91107 3.50251C10.3603 3.24847 10.8571 3.08989 11.3704 3.0367C11.8838 2.9835 12.4026 3.03683 12.8943 3.19335C13.3861 3.34987 13.8403 3.60621 14.2284 3.94633C14.6166 4.28645 14.9303 4.70302 15.1501 5.16997C15.3698 5.63693 15.4908 6.14422 15.5055 6.66009C15.5202 7.17596 15.4282 7.6893 15.2353 8.16799C15.0425 8.64669 14.7529 9.08042 14.3847 9.44206" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 							</g>
 						</svg>
+						<p id="favouritesCount" class="badge"></p>
 						<span>
 							Favoris
 						</span>
@@ -946,6 +1032,14 @@
 		</div>
 		<!-- pwa install app popup End -->
 	</div>
+	
+	
+<!-- Overlay pour afficher l'image -->
+<div id="overlay" class="overlay">
+  <img id="overlayImage" src="" alt="overlay-img">
+</div>
+
+
 	<script src="assets/js/jquery-min-3.6.0.js"></script>
 	<script src="assets/js/slick.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
@@ -953,5 +1047,62 @@
 	<script src="assets/js/custom.js"></script>
 	
 	 <script src="assets/js/script_audio.js"></script>
+	 
+	 <script src="js_cookies_panier.js"></script>
+	 
+	  <script src="js_cookies_favorie.js"></script>
+	  
+	  
+	  <!-- pour les caterogie pour detecter qui sont active les categorie -->
+	   <script>
+        function selectCategory(category) {
+            localStorage.setItem('selectedCategory', category);
+            window.location.href = 'search-screen.html';
+        }
+    </script>
+	
+	
+		  <!--animation pour image meilleurs ventes -->
+	<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var imageLinks = document.querySelectorAll('.image-link');
+  var overlay = document.getElementById('overlay');
+  var overlayImage = document.getElementById('overlayImage');
+
+  imageLinks.forEach(function(imageLink) {
+    imageLink.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent default link behavior
+
+      // Show overlay with clicked image
+      var mainImage = this.querySelector('.main-image');
+      overlayImage.src = mainImage.src;
+      overlay.style.display = 'block';
+
+      // Déplacer l'overlay vers la gauche avant de le faire disparaître
+      setTimeout(function() {
+        overlay.style.opacity = '0';
+        overlay.style.transform = 'translateX(-100%)'; // Déplacer vers la gauche de 100% de la largeur
+      }, 2000); // Délai de 2 secondes avant la disparition (ajustable)
+
+      // Rediriger vers single-shoes.html après l'animation
+      setTimeout(function() {
+        window.location.href = imageLink.href;
+      }, 3000); // Rediriger après 3 secondes (ajustable)
+    });
+  });
+
+  // Réinitialiser l'overlay lorsque la page est chargée
+  window.addEventListener('pageshow', function(event) {
+    if (event.persisted) {
+      overlay.style.opacity = '1';
+      overlay.style.transform = 'translateX(0)';
+      setTimeout(function() {
+        overlay.style.display = 'none';
+      }, 0); // Masquer immédiatement l'overlay après la réinitialisation
+    }
+  });
+});
+</script>
+
 </body>
 </html>
